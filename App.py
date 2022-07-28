@@ -11,14 +11,14 @@ from keras.models import load_model
 
 #define start of data bracket and end
 start = '2010-01-01'
-end = '2021-12-31'
+end = '2022-06-30'
 st.title('Stock Trend Prediction')
 
 user_input = st.text_input('Enter Stock Ticker', 'AAPL')
 df = data.DataReader(user_input, 'yahoo', start, end)
 
 #describing the data
-st.subheader('Data from 2010 - 2021')
+st.subheader('Data from 2010 - 2022')
 st.write(df.describe())
 
 #data visualization
