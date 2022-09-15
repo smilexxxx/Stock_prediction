@@ -2,6 +2,7 @@
 import numpy as np
 import pandas as pd
 import tensorflow as ts
+import streamlit as st
 from matplotlib import pyplot as plt
 
 from pandas_datareader import data, wb
